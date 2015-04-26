@@ -37,15 +37,19 @@ Wikipedia Background on each Index:
 
 ## Application Overview
 
+Sample Application plot, FTSE index:
+
+<img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" />
+
+---
+
+## Application Details
+
 The UI is built with shiny, and is intended to be clear and easy to use
 
 A user simply chooses the market they're interested in from the dropdown and the resulting market data is plotted
 
 The % gain for the chosen market is also calculated and shown along the y axis
-
----
-
-## Application Details
 
 The application uses R's built-in data set EuStockMarket
 

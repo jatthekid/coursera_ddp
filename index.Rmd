@@ -37,15 +37,26 @@ Wikipedia Background on each Index:
 
 ## Application Overview
 
+Sample Application plot, FTSE index:
+
+```{r simple-plot, fig.height = 6, fig.align = 'center', message = F, echo=FALSE}
+require(ggplot2)
+data(EuStockMarkets)
+ggplot(data=data.frame(EuStockMarkets),aes(x=seq(1,length(d[,1])),y=FTSE))+geom_line(size=1,color='red')+xlab('Day')+
+          ylab('Closing Price')+
+          theme(axis.title = element_text(face="bold", colour="black"),
+                axis.text=element_text(face="bold", colour="blue"))
+```
+
+---
+
+## Application Details
+
 The UI is built with shiny, and is intended to be clear and easy to use
 
 A user simply chooses the market they're interested in from the dropdown and the resulting market data is plotted
 
 The % gain for the chosen market is also calculated and shown along the y axis
-
----
-
-## Application Details
 
 The application uses R's built-in data set EuStockMarket
 

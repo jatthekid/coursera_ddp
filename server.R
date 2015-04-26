@@ -24,22 +24,22 @@ shinyServer(function(input, output)
         ggplot(data=d,aes(x=seq(1,length(d[,1])),y=DAX))+geom_line(size=1, color='red')+xlab('Day')+
           ylab(paste('Closing Price, gain = ', gain, '%'))+
           theme(axis.title = element_text(face="bold", colour="black"),
-          axis.text=element_text(face="bold", colour="black"))
+          axis.text=element_text(face="bold", colour="blue"))
       } else if (market=='SMI') {
         ggplot(data=d,aes(x=seq(1,length(d[,1])),y=SMI))+geom_line(size=1,color='red')+xlab('Day')+
           ylab(paste('Closing Price, gain = ', gain, '%'))+
           theme(axis.title = element_text(face="bold", colour="black"),
-                axis.text=element_text(face="bold", colour="black"))
+                axis.text=element_text(face="bold", colour="blue"))
       } else if (market=='CAC') {
         ggplot(data=d,aes(x=seq(1,length(d[,1])),y=CAC))+geom_line(size=1,color='red')+xlab('Day')+
           ylab(paste('Closing Price, gain = ', gain, '%'))+
           theme(axis.title = element_text(face="bold", colour="black"),
-                axis.text=element_text(face="bold", colour="black"))
+                axis.text=element_text(face="bold", colour="blue"))
       } else if (market=='FTSE') {
         ggplot(data=d,aes(x=seq(1,length(d[,1])),y=FTSE))+geom_line(size=1,color='red')+xlab('Day')+
           ylab(paste('Closing Price, gain = ', gain, '%'))+
           theme(axis.title = element_text(face="bold", colour="black"),
-                axis.text=element_text(face="bold", colour="black"))
+                axis.text=element_text(face="bold", colour="blue"))
       }
 
   }  
